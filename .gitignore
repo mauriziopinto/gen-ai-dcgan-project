@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+*.egg-info/
+dataset/
+*.pth
+loss_curves.png
+Generative_AI_Analysis_Report.md
+Generative_AI_Analysis_Report.docx
