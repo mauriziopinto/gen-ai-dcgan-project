@@ -36,15 +36,15 @@ uv sync
 jupyter notebook generative_model.ipynb
 ```
 
-Run all cells top-to-bottom. Training 50 epochs takes approximately 8 minutes on an NVIDIA 4070 Ti. The notebook will load from a saved checkpoint if one exists.
+Run all cells top-to-bottom. Training 100 epochs takes approximately 27 minutes on an NVIDIA 4070 Ti.
 
 ## Results
 
-The DCGAN generates plausible face structures with correct feature positioning and moderate diversity. Key metrics:
+The DCGAN generates plausible face structures with correct feature positioning and moderate diversity. Three training stabilization techniques are used: spectral normalization on the Discriminator, label smoothing (0.9), and a 2:1 Generator-to-Discriminator training ratio. Key metrics:
 
 - Generator: 3,576,704 parameters
 - Discriminator: 2,765,568 parameters
-- Training: 50 epochs, batch size 128, Adam optimizer (lr=0.0002)
+- Training: 100 epochs, batch size 128, Adam optimizer (lr=0.0002)
 
 ## Bias Awareness
 
